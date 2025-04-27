@@ -8,4 +8,4 @@ The solution to this is we decided to build a browser extension/email plugin tha
 Ongoing and growing threat. This can also be pitched to schools, remote companies, or public sector orgs.
 
 ## Main Contributions
-Jason Sourivong (serjason2)
+- Jason Sourivong (serjason2)
