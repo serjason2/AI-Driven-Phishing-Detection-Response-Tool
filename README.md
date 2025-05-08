@@ -15,6 +15,9 @@ To mitigate this risk from happening upon others we decided to build a browser e
 # Why this Works
 This Social Engineering technique is an ongoing and growing threat that has been around for a very long time and statistics shows. This solution can be pitched to schools, remote companies, or public sector orgs.
 
+# How to Use (Step-By-Step)
+- 
+
 ## Main Contributions
 - Jason Sourivong (serjason2)
 -
