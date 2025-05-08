@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 if (response?.safe) {
-                    resultDisplay.textContent = "✅ This page appears safe.";
+                    resultDisplay.textContent = "This page appears safe. ✅";
                 } else {
-                    resultDisplay.textContent = "⚠️ This page might be suspicious.";
+                    resultDisplay.textContent = "This page might be suspicious. ⚠️";
                 }
             }
         );
