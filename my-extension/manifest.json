@@ -1,11 +1,11 @@
 {
-    "name": "Phishing Guardian",
+    "name": "Phishing Guard",
     "description": "Detects phishing attempts in real time.",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
         "default_popup": "popup/popup.html",
-        "default_icon": "images/hello_extensions.png"
+        "default_icon": "images/hacker.png"
     },
     "permissions": ["tabs", "storage", "scripting"],
     "background": {
@@ -19,6 +19,6 @@
         }
     ],
     "icons": {
-        "48": "images/hello_extensions.png"
+        "48": "images/hacker.png"
     }
 }
