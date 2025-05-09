@@ -16,7 +16,7 @@ To mitigate this risk from happening upon others we decided to build a browser e
 This Social Engineering technique is an ongoing and growing threat that has been around for a very long time and statistics shows. This solution can be pitched to schools, remote companies, or public sector orgs.
 
 # Tech Stack | How to Use (Step-By-Step)
-- **Programming:** HTML, JS
+- **Programming:** JavaScript, HTML
 - **API:** Google Safe Browsing
 - **Image:** Designer by Monkik via [Flaticon](https://www.flaticon.com/authors/monkik)
 
