@@ -1,19 +1,16 @@
-// popup.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const resultDisplay = document.getElementById("result");
+    const iconDisplay = document.getElementById("icon");
 
-    // Query the active tab
-    chrome.tabs.query({ active: true, currentWindow: true}, (tabs) => {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         if (tabs.length === 0) {
-            returnDisplay.textContent = "No active tab found.";
+            resultDisplay.textContent = "No active tab found.";
             return;
         }
 
         const activeTab = tabs[0];
 
-        // Send message to background.js with the current tab URL
-        chrome.runtime.sendMessage (
+        chrome.runtime.sendMessage(
             { type: "PAGE_URL", url: activeTab.url },
             (response) => {
                 if (chrome.runtime.lastError) {
@@ -22,9 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 if (response?.safe) {
-                    resultDisplay.textContent = "This page appears safe. ✅";
+                    iconDisplay.textContent = "✅";
+                    resultDisplay.textContent = "This page appears safe.";
+                    resultDisplay.className = "safe";
                 } else {
-                    resultDisplay.textContent = "This page might be suspicious. ⚠️";
+                    iconDisplay.textContent = "⚠️";
+                    resultDisplay.textContent = "This page might be suspicious!";
+                    resultDisplay.className = "suspicious";
                 }
             }
         );
